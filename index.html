@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emilio Copalcua | Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bunker: '#060608',
+                        'bunker-card': '#0b0b0f',
+                        'bunker-border': '#161622',
+                        turquoise: '#00e6ff',
+                    },
+                    boxShadow: {
+                        'neon': '0 0 20px rgba(0, 230, 255, 0.15)',
+                        'neon-thick': '0 0 30px rgba(0, 230, 255, 0.35)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+    </style>
+</head>
+<body class="bg-bunker text-zinc-300 min-h-screen selection:bg-turquoise selection:text-bunker">
+
+    <!-- 🌌 EFECTO DE FONDO GLOBAL -->
+    <div class="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_top,rgba(0,230,255,0.02),transparent_50%)]"></div>
+
+    <!-- 📑 NAVBAR FLOTANTE -->
+    <nav class="sticky top-0 z-50 bg-bunker/70 backdrop-blur-md border-b border-bunker-border">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <span class="text-white font-mono font-bold tracking-wider text-sm">&lt;EMILIO.C /&gt;</span>
+            <div class="flex gap-6 text-xs font-mono tracking-widest">
+                <a href="#about" class="hover:text-turquoise transition-colors">ABOUT</a>
+                <a href="#projects" class="hover:text-turquoise transition-colors">PROJECTS</a>
+                <a href="#experience" class="hover:text-turquoise transition-colors">EXPERIENCE</a>
+                <a href="#certifications" class="hover:text-turquoise transition-colors">CERTIFICATIONS</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-4 py-12 md:py-20 space-y-24">
+
+        <!-- ================= 🚀 HERO SECTION ================= -->
+        <section id="about" class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center pt-4">
+            <!-- Foto de Perfil con Neón -->
+            <div class="md:col-span-4 flex justify-center">
+                <div class="relative group">
+                    <div class="absolute inset-0 bg-turquoise/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500 opacity-70"></div>
+                    <div class="w-64 h-64 md:w-full md:h-80 bg-bunker-card border border-bunker-border rounded-3xl overflow-hidden relative z-10 p-2 shadow-neon group-hover:border-turquoise/40 transition-all duration-500">
+                        <img src="assets/perfil.jpg" alt="Emilio Copalcua" class="w-full h-full object-cover rounded-2xl grayscale hover:grayscale-0 transition-all duration-500">
+                    </div>
+                </div>
+            </div>
+            <!-- Información Principal -->
+            <div class="md:col-span-8 space-y-6 text-center md:text-left">
+                <div class="space-y-2">
+                    <span class="text-xs font-mono text-turquoise tracking-widest uppercase block">// Available for Freelance Contracts</span>
+                    <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-white">Emilio Copalcua Pluma</h1>
+                    <p class="text-sm md:text-base font-mono text-zinc-400 mt-2">Creative Full-Stack Developer & IT Engineer</p>
+                </div>
+                <p class="text-sm md:text-base text-zinc-400 font-light leading-relaxed max-w-2xl">
+                    Information Technology Engineering student at Universidad Politécnica de Tlaxcala. Specialized in building ultra-fast web systems, immersive interfaces, and advanced network architectures. I build high-performance software utilizing clean, minimalist dark-themed designs.
+                </p>
+                <!-- Botones y Contacto Rápido -->
+                <div class="flex flex-wrap justify-center md:justify-start gap-4 pt-2 font-mono text-xs">
+                    <a href="mailto:sthefan-salvatore@outlook.es" class="bg-turquoise text-bunker font-bold px-6 h-11 rounded-xl flex items-center shadow-neon hover:shadow-thick transition-all duration-300">
+                        CONTACT PROTOCOL
+                    </a>
+                    <a href="https://github.com/hadesguapo82" target="_blank" class="border border-bunker-border bg-bunker-card hover:border-zinc-700 text-white px-6 h-11 rounded-xl flex items-center transition-all">
+                        GITHUB PROFILE
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= 📊 PROJECTS SECTION ================= -->
+        <section id="projects" class="space-y-8">
+            <div class="space-y-1">
+                <h2 class="text-xl font-bold text-white font-mono uppercase tracking-wide flex items-center gap-2">
+                    <span class="text-turquoise">//</span> Production Repositories
+                </h2>
+                <p class="text-xs text-zinc-500 font-mono">Visual gallery of deployed assets and logic infrastructure.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Tarjeta 1: G-Encuestas -->
+                <div class="bg-bunker-card border border-bunker-border rounded-3xl overflow-hidden group hover:border-turquoise/20 transition-all duration-500 shadow-neon">
+                    <div class="h-48 overflow-hidden relative border-b border-bunker-border">
+                        <img src="assets/proyectos/g-encuestas.jpg" alt="G-Encuestas Engine" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-bunker-card to-transparent opacity-40"></div>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <div class="space-y-1">
+                            <span class="text-[10px] font-mono text-turquoise uppercase tracking-widest">Full-Stack System</span>
+                            <h3 class="text-base font-bold text-white">G-Encuestas — Census System</h3>
+                        </div>
+                        <p class="text-xs text-zinc-400 font-light leading-relaxed">
+                            Robust infrastructure with offline capabilities via Service Workers and IndexedDB, real-time GPS tracking, and custom minimalist visualizations.
+                        </p>
+                        <div class="flex flex-wrap gap-1.5 font-mono text-[10px]">
+                            <span class="bg-bunker border border-bunker-border px-2 py-0.5 rounded text-zinc-400">Node.js</span>
+                            <span class="bg-bunker border border-bunker-border px-2 py-0.5 rounded text-zinc-400">IndexedDB</span>
+                            <span class="bg-bunker border border-bunker-border px-2 py-0.5 rounded text-zinc-400">GPS API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2: E-Commerce & Luxury Landings -->
+                <div class="bg-bunker-card border border-bunker-border rounded-3xl overflow-hidden group hover:border-turquoise/20 transition-all duration-500 shadow-neon">
+                    <div class="h-48 overflow-hidden relative border-b border-bunker-border">
+                        <img src="assets/proyectos/vortex.jpg" alt="Vortex Horizons" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-bunker-card to-transparent opacity-40"></div>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <div class="space-y-1">
+                            <span class="text-[10px] font-mono text-turquoise uppercase tracking-widest">Frontend Framework</span>
+                            <h3 class="text-base font-bold text-white">Premium Landings & E-Commerce</h3>
+                        </div>
+                        <p class="text-xs text-zinc-400 font-light leading-relaxed">
+                            High-conversion responsive landing configurations optimized with asset bundling and fast server builds via modern static architectures.
+                        </p>
+                        <div class="flex flex-wrap gap-1.5 font-mono text-[10px]">
+                            <span class="bg-bunker border border-bunker-border px-2 py-0.5 rounded text-turquoise">Astro</span>
+                            <span class="bg-bunker border border-bunker-border px-2 py-0.5 rounded text-zinc-400">React</span>
+                            <span class="bg-bunker border border-bunker-border px-2 py-0.5 rounded text-zinc-400">Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3: Interactive 3D Web -->
+                <div class="bg-bunker-card border border-bunker-border rounded-3xl overflow-hidden group hover:border-turquoise/20 transition-all duration-500 shadow-neon">
+                    <div class="h-48 overflow-hidden relative border-b border-bunker-border">
+                        <img src="assets/proyectos/ecommerce.jpg" alt="Interactive Experience" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-bunker-card to-transparent opacity-40"></div>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <div class="space-y-1">
+                            <span class="text-[10px] font-mono text-turquoise uppercase tracking-widest">Creative Graphics</span>
+                            <h3 class="text-base font-bold text-white">3D Immersive Design</h3>
+                        </div>
+                        <p class="text-xs text-zinc-400 font-light leading-relaxed">
+                            Integration of complex 3D rendering parameters, canvas matrices, and smooth responsive spatial layouts directly into browser engines.
+                        </p>
+                        <div class="flex flex-wrap gap-1.5 font-mono text-[10px]">
+                            <span class="bg-bunker border border-bunker-border px-2 py-0.5 rounded text-zinc-400">Three.js</span>
+                            <span class="bg-bunker border border-bunker-border px-2 py-0.5 rounded text-zinc-400">WebGL</span>
+                            <span class="bg-bunker border border-bunker-border px-2 py-0.5 rounded text-zinc-400">Animations</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= 💼 EXPERIENCE & TIMELINE ================= -->
+        <section id="experience" class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <div class="lg:col-span-4 space-y-2">
+                <h2 class="text-xl font-bold text-white font-mono uppercase tracking-wide flex items-center gap-2">
+                    <span class="text-turquoise">//</span> Timeline Log
+                </h2>
+                <p class="text-xs text-zinc-500 font-mono">Academic and architectural development records.</p>
+            </div>
+
+            <div class="lg:col-span-8 space-y-6">
+                <!-- Registro 1 -->
+                <div class="bg-bunker-card border border-bunker-border rounded-3xl p-6 relative group hover:border-zinc-800 transition-colors">
+                    <div class="flex justify-between items-start text-xs font-mono mb-2">
+                        <span class="font-bold text-white text-sm">Professional Internship II (Residencia)</span>
+                        <span class="text-turquoise">UPTx</span>
+                    </div>
+                    <p class="text-xs text-zinc-400 font-light leading-relaxed">
+                        Full development of internship frameworks focusing on responsive multi-device application interfaces, API integration pipelines, and routine structural logic updates.
+                    </p>
+                </div>
+
+                <!-- Registro 2 -->
+                <div class="bg-bunker-card border border-bunker-border rounded-3xl p-6 relative group hover:border-zinc-800 transition-colors">
+                    <div class="flex justify-between items-start text-xs font-mono mb-2">
+                        <span class="font-bold text-white text-sm">Backend Security Refactoring</span>
+                        <span class="text-zinc-500">Collaborative</span>
+                    </div>
+                    <p class="text-xs text-zinc-400 font-light leading-relaxed">
+                        Assigned to optimization routines within centralized survey engines, including refactoring data security guidelines and performance audits.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= 🎓 CERTIFICATIONS SECTION ================= -->
+        <section id="certifications" class="space-y-8">
+            <div class="space-y-1">
+                <h2 class="text-xl font-bold text-white font-mono uppercase tracking-wide flex items-center gap-2">
+                    <span class="text-turquoise">//</span> Verified Credentials
+                </h2>
+                <p class="text-xs text-zinc-500 font-mono">Official certifications backing full-stack and networking workflows.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center font-mono text-xs">
+                <!-- Certificado 1 -->
+                <div class="bg-bunker-card border border-bunker-border rounded-2xl p-4 space-y-3 group hover:border-turquoise/30 transition-all duration-300">
+                    <div class="h-12 flex items-center justify-center opacity-60 group-hover:opacity-100 transition-opacity">
+                        <img src="assets/certificaciones/javascript.png" alt="Udemy Logo" class="h-10 object-contain">
+                    </div>
+                    <div class="space-y-0.5">
+                        <span class="text-white block font-bold text-[11px] truncate">Master JavaScript 2026</span>
+                        <span class="text-zinc-500 block text-[9px]">Astro, Angular & Node</span>
+                    </div>
+                </div>
+
+                <!-- Certificado 2 -->
+                <div class="bg-bunker-card border border-bunker-border rounded-2xl p-4 space-y-3 group hover:border-turquoise/30 transition-all duration-300">
+                    <div class="h-12 flex items-center justify-center opacity-60 group-hover:opacity-100 transition-opacity">
+                        <img src="assets/certificaciones/threejs.png" alt="Three.js" class="h-10 object-contain">
+                    </div>
+                    <div class="space-y-0.5">
+                        <span class="text-white block font-bold text-[11px] truncate">Three JS Core</span>
+                        <span class="text-zinc-500 block text-[9px]">3D Graphic Layouts</span>
+                    </div>
+                </div>
+
+                <!-- Certificado 3 -->
+                <div class="bg-bunker-card border border-bunker-border rounded-2xl p-4 space-y-3 group hover:border-turquoise/30 transition-all duration-300">
+                    <div class="h-12 flex items-center justify-center opacity-60 group-hover:opacity-100 transition-opacity">
+                        <img src="assets/certificaciones/flutter.png" alt="Domestika" class="h-10 object-contain">
+                    </div>
+                    <div class="space-y-0.5">
+                        <span class="text-white block font-bold text-[11px] truncate">Flutter Framework</span>
+                        <span class="text-zinc-500 block text-[9px]">Cross-Platform Mobile</span>
+                    </div>
+                </div>
+
+                <!-- Certificado 4 -->
+                <div class="bg-bunker-card border border-bunker-border rounded-2xl p-4 space-y-3 group hover:border-turquoise/30 transition-all duration-300">
+                    <div class="h-12 flex items-center justify-center opacity-60 group-hover:opacity-100 transition-opacity text-xl">
+                        🌐
+                    </div>
+                    <div class="space-y-0.5">
+                        <span class="text-white block font-bold text-[11px] truncate">Cisco CCNA Core</span>
+                        <span class="text-zinc-500 block text-[9px]">Routing & ACL Safety</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 📑 FOOTER -->
+    <footer class="border-t border-bunker-border bg-bunker-card mt-24">
+        <div class="max-w-6xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-mono text-zinc-500">
+            <span>&copy; 2026 Emilio Copalcua Pluma. All systems operational.</span>
+            <div class="flex gap-4">
+                <a href="mailto:sthefan-salvatore@outlook.es" class="hover:text-turquoise transition-colors">EMAIL</a>
+                <a href="https://github.com/hadesguapo82" target="_blank" class="hover:text-turquoise transition-colors">GITHUB</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
